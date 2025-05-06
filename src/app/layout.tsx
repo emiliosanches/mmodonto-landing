@@ -28,15 +28,17 @@ export default function RootLayout({
     <html lang="pt">
       <body className={`${inter.variable} antialiased`}>
         <SidebarProvider open={false}>
-          <AppSidebar />
-          <main className="w-full">
+          <aside role="complementary">
+            <AppSidebar />
+          </aside>
+          <div>
             <Header />
-            {children}
+            <main>{children}</main>
             <Footer />
-          </main>
-          <SpeedInsights />
-          <Analytics />
+          </div>
         </SidebarProvider>
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );

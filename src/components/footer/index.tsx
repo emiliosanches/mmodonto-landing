@@ -4,7 +4,10 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="bg-teal-50 text-sm text-gray-700 px-6 py-10">
+    <footer
+      className="bg-teal-50 text-sm text-gray-700 px-6 py-10"
+      role="contentinfo"
+    >
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
         <div>
           <h4 className="font-semibold mb-2">Localização</h4>
@@ -12,13 +15,16 @@ export function Footer() {
             href="https://maps.app.goo.gl/A35s9VEX6LBRP1tK9"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Ver localização da clínica no Google Maps"
           >
-            <MapPin className="inline" size={16} /> Rua Caetés, 993 Centro
+            <MapPin className="inline" size={16} /> Rua Caetés, 993 - Centro -
             Tupã/SP
           </a>
         </div>
-        <div>
-          <h4 className="font-semibold mb-2">Links</h4>
+        <nav role="navigation" aria-labelledby="footer-links-heading">
+          <h4 className="font-semibold mb-2" id="footer-links-heading">
+            Links
+          </h4>
           <ul>
             <li>
               <Link href="/">Início</Link>
@@ -33,7 +39,7 @@ export function Footer() {
               <Link href="/tratamentos">Tratamentos</Link>
             </li>
           </ul>
-        </div>
+        </nav>
         <div>
           <h4 className="font-semibold mb-2">Contato</h4>
           <p>
@@ -54,7 +60,7 @@ export function Footer() {
           >
             <Image
               src="/assets/icons/instagram.png"
-              alt="Instagram"
+              alt="Instagram da M&M Odonto"
               className="w-6 h-6"
               width={24}
               height={24}
@@ -69,6 +75,7 @@ export function Footer() {
           href="https://www.linkedin.com/in/emiliosanches/"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="LinkedIn de Emilio Sanches (abre em nova aba)"
         >
           Emilio Sanches
         </a>

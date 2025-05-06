@@ -57,7 +57,7 @@ const serviceAreas = [
 
 export default function HomePage() {
   return (
-    <div>
+    <main>
       <section className="bg-primary text-white px-6 flex flex-col-reverse justify-center items-center gap-2 sm:flex-row">
         <Image
           src="/assets/images/sorriso.png"
@@ -163,6 +163,6 @@ export default function HomePage() {
           </Link>
         </div>
       </section>
-    </div>
+    </main>
   );
 }
