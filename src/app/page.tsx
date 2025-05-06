@@ -1,14 +1,13 @@
 import React from "react";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ChevronRight } from "lucide-react";
 
 const serviceAreas = [
   {
     title: "ORTODONTIA",
-    desc: "Corrige o alinhamento dos dentes e a mordida.",
+    desc: "Corrige a posição dos dentes e maxilar, visando a harmonia da face.\nVenha melhorar a função dentária e a estética do seu sorriso.",
     icon: (
       <Image
         src="/assets/icons/ortodontia.png"
@@ -20,7 +19,7 @@ const serviceAreas = [
   },
   {
     title: "DENTÍSTICA",
-    desc: "Clareamento e restaurações estéticas.",
+    desc: "Clareamento e restaurações estéticas.\nTratamento de cáries, fraturas, descolorações, descoloração, e muito mais. Deixe seu sorriso ainda mais bonito!",
     icon: (
       <Image
         src="/assets/icons/dentistica.png"
@@ -32,10 +31,10 @@ const serviceAreas = [
   },
   {
     title: "ENDODONTIA",
-    desc: "Tratamento de canal e polpas dentárias.",
+    desc: "Tratamento de lesões na polpa e canais.\nPrecisando de um tratamento mais profundo? Nossos profissionais estão capacitados para te atender!",
     icon: (
       <Image
-        src="/assets/icons/ortodontia.png"
+        src="/assets/icons/endodontia.png"
         alt="Ícone de um dente com com a polpa representada"
         width={36}
         height={36}
@@ -44,7 +43,7 @@ const serviceAreas = [
   },
   {
     title: "PRÓTESE",
-    desc: "Reposição de dentes ausentes ou desgastados.",
+    desc: "Reposição de dentes ausentes ou desgastados.\nFazemos a instalação e manutenção de próteses dentárias fixas e removíveis para restaurar seu sorriso e sua autoestima.",
     icon: (
       <Image
         src="/assets/icons/ortodontia.png" //TODO
@@ -58,7 +57,7 @@ const serviceAreas = [
 
 export default function HomePage() {
   return (
-    <div className="bg-white text-gray-900 font-sans">
+    <div>
       <section className="bg-primary text-white px-6 flex flex-col-reverse justify-center items-center gap-2 sm:flex-row">
         <Image
           src="/assets/images/sorriso.png"
@@ -117,12 +116,24 @@ export default function HomePage() {
         {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 max-w-6xl mx-auto"> */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto justify-center">
           {serviceAreas.map((item) => (
-            <Card key={item.title} className="rounded-2xl shadow-sm">
-              <CardContent className="p-6">
-                <h3 className="text-lg font-semibold mb-2 flex items-center">
-                  {item.icon} {item.title}
-                </h3>
-                <p className="text-sm text-gray-600">{item.desc}</p>
+            <Card
+              key={item.title}
+              className="rounded-2xl shadow-sm group hover:bg-primary hover:text-white transition-all"
+            >
+              <CardContent className="p-6 cursor-pointer">
+                <div className="flex justify-between items-center mb-2">
+                  <h3 className="text-lg font-semibold flex items-center mb-0">
+                    {item.icon} {item.title}
+                  </h3>
+
+                  <ChevronRight
+                    color="white"
+                    className="relative left-6 color-white duration-500 opacity-0 group-hover:opacity-100 group-hover:left-0"
+                  />
+                </div>
+                <p className="text-sm group-hover:text-gray-100 whitespace-pre-line">
+                  {item.desc}
+                </p>
               </CardContent>
             </Card>
           ))}
@@ -136,7 +147,12 @@ export default function HomePage() {
         </Link>
 
         <div className="text-center mt-10">
-          <Button className="bg-teal-600 hover:bg-teal-700 text-white px-6 py-2 rounded-xl text-base cursor-pointer ">
+          <Link
+            href="https://wa.me/5514997027365"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex gap-2 bg-primary hover:bg-teal-700 text-white px-6 py-2 rounded-xl text-base cursor-pointer"
+          >
             <Image
               src="/assets/icons/whatsapp-white.png"
               alt="Ícone do WhatsApp"
@@ -144,7 +160,7 @@ export default function HomePage() {
               height={24}
             />
             Agendar agora
-          </Button>
+          </Link>
         </div>
       </section>
     </div>

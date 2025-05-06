@@ -15,6 +15,7 @@ import { useActivePath } from "@/lib/hooks/use-active-path";
 import { cn } from "@/lib/utils";
 import { BriefcaseMedical, ContactRound, Home, Store } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const items = [
   {
@@ -60,14 +61,14 @@ export function AppSidebar() {
             <SidebarMenu>
               {items.map((item) => (
                 <SidebarMenuItem key={item.title}>
-                  <SidebarMenuButton asChild>
-                    <a
+                  <SidebarMenuButton asChild className="hover:text-teal-700">
+                    <Link
                       href={item.url}
                       className={cn(isActive(item.url) && "text-primary")}
                     >
                       <item.icon />
                       <span>{item.title}</span>
-                    </a>
+                    </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}

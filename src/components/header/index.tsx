@@ -5,7 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { useActivePath } from "@/lib/hooks/use-active-path";
-import { Button } from "../ui/button";
 import { SidebarTrigger } from "../ui/sidebar";
 
 export function Header() {
@@ -18,13 +17,9 @@ export function Header() {
 
   const isPathActive = useActivePath();
 
-  const handleOpenWhatsapp = () => {
-    window.open("https://wa.me/5514997027365", "_blank", "noopener,noreferrer");
-  }
-
   return (
-    <header className="relative bg-white shadow-sm px-8 flex justify-center items-center h-20 md:justify-between">
-      <SidebarTrigger className="absolute left-8 md:hidden" />
+    <header className="sticky top-0 bg-white shadow-sm px-8 flex justify-center items-center h-20 md:justify-between">
+      <SidebarTrigger className="absolute left-8 md:hidden text-foreground" />
       <Link href="/">
         <Image
           src="/assets/logo/mmodonto-horizontal-colorido.png"
@@ -48,7 +43,12 @@ export function Header() {
           </Link>
         ))}
 
-        <Button className="text-white cursor-pointer" onClick={handleOpenWhatsapp}>
+        <Link
+          href="https://wa.me/5514997027365"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex gap-2 bg-primary hover:bg-teal-700 text-white px-6 py-2 rounded-xl text-base cursor-pointer"
+        >
           <Image
             src="/assets/icons/whatsapp-white.png"
             alt="Ícone do WhatsApp"
@@ -56,7 +56,7 @@ export function Header() {
             height={24}
           />{" "}
           (14) 99702-7365
-        </Button>
+        </Link>
       </nav>
     </header>
   );
