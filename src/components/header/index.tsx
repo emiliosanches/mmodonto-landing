@@ -19,7 +19,7 @@ export async function Header() {
 
   return (
     <header
-      className="sticky top-0 bg-white shadow-sm px-8 flex justify-center items-center h-20 md:justify-between"
+      className="fixed top-0 bg-white shadow-md px-8 flex justify-center items-center h-20 md:justify-between z-50 w-full"
       role="banner"
     >
       <SidebarTrigger

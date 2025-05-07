@@ -16,6 +16,7 @@ export function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Ver localização da clínica no Google Maps"
+            className="underline"
           >
             <MapPin className="inline" size={16} /> Rua Caetés, 993 - Centro -
             Tupã/SP

@@ -6,6 +6,7 @@ import { ArrowRight, ChevronRight } from "lucide-react";
 
 const serviceAreas = [
   {
+    link: "/tratamentos#aparelho-ortodontico",
     title: "ORTODONTIA",
     desc: "Corrige a posição dos dentes e maxilar, visando a harmonia da face.\nVenha melhorar a função dentária e a estética do seu sorriso.",
     icon: (
@@ -18,8 +19,9 @@ const serviceAreas = [
     ),
   },
   {
+    link: "/tratamentos#restauracao",
     title: "DENTÍSTICA",
-    desc: "Clareamento e restaurações estéticas.\nTratamento de cáries, fraturas, descolorações, descoloração, e muito mais. Deixe seu sorriso ainda mais bonito!",
+    desc: "Clareamento e restaurações estéticas.\nTratamento de cáries, fraturas, descolorações, e muito mais. Deixe seu sorriso ainda mais bonito!",
     icon: (
       <Image
         src="/assets/icons/dentistica.png"
@@ -30,6 +32,7 @@ const serviceAreas = [
     ),
   },
   {
+    link: "/tratamentos#canal",
     title: "ENDODONTIA",
     desc: "Tratamento de lesões na polpa e canais.\nPrecisando de um tratamento mais profundo? Nossos profissionais estão capacitados para te atender!",
     icon: (
@@ -42,11 +45,12 @@ const serviceAreas = [
     ),
   },
   {
+    link: "/tratamentos#protese",
     title: "PRÓTESE",
     desc: "Reposição de dentes ausentes ou desgastados.\nFazemos a instalação e manutenção de próteses dentárias fixas e removíveis para restaurar seu sorriso e sua autoestima.",
     icon: (
       <Image
-        src="/assets/icons/ortodontia.png" //TODO
+        src="/assets/icons/protese.png"
         alt="Ícone de uma prótese dentária"
         width={36}
         height={36}
@@ -116,26 +120,25 @@ export default function HomePage() {
         {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 max-w-6xl mx-auto"> */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto justify-center">
           {serviceAreas.map((item) => (
-            <Card
-              key={item.title}
-              className="rounded-2xl shadow-sm group hover:bg-primary hover:text-white transition-all"
-            >
-              <CardContent className="p-6 cursor-pointer">
-                <div className="flex justify-between items-center mb-2">
-                  <h3 className="text-lg font-semibold flex items-center mb-0">
-                    {item.icon} {item.title}
-                  </h3>
+            <Link href={item.link} key={item.title}>
+              <Card className="rounded-2xl shadow-sm group hover:bg-primary hover:text-white transition-all">
+                <CardContent className="p-6 cursor-pointer">
+                  <div className="flex justify-between items-center mb-2">
+                    <h3 className="text-lg font-semibold flex items-center mb-0">
+                      {item.icon} {item.title}
+                    </h3>
 
-                  <ChevronRight
-                    color="white"
-                    className="relative left-6 color-white duration-500 opacity-0 group-hover:opacity-100 group-hover:left-0"
-                  />
-                </div>
-                <p className="text-sm group-hover:text-gray-100 whitespace-pre-line">
-                  {item.desc}
-                </p>
-              </CardContent>
-            </Card>
+                    <ChevronRight
+                      color="white"
+                      className="relative left-6 color-white duration-500 opacity-0 group-hover:opacity-100 group-hover:left-0"
+                    />
+                  </div>
+                  <p className="text-sm group-hover:text-gray-100 whitespace-pre-line">
+                    {item.desc}
+                  </p>
+                </CardContent>
+              </Card>
+            </Link>
           ))}
         </div>
 
