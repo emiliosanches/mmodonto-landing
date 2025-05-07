@@ -1,4 +1,4 @@
-"use server";
+"use client";
 
 import {
   Sidebar,
@@ -11,11 +11,12 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
-import { getCurrentPath, matchPaths } from "@/lib/utils";
-import { cn } from "@/lib/utils/client";
+import { matchPaths } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 import { BriefcaseMedical, ContactRound, Home, Store } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const items = [
   {
@@ -44,8 +45,8 @@ const items = [
   },
 ];
 
-export async function AppSidebar() {
-  const currentPath = await getCurrentPath();
+export function AppSidebar() {
+  const currentPath = usePathname();
 
   return (
     <Sidebar aria-label="Menu lateral do site">

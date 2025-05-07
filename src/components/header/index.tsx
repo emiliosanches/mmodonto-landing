@@ -1,13 +1,14 @@
-"use server";
+"use client";
 
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { getCurrentPath, matchPaths } from "@/lib/utils";
-import { cn } from "@/lib/utils/client";
+import { matchPaths } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 import { SidebarTrigger } from "../ui/sidebar";
+import { usePathname } from "next/navigation";
 
-export async function Header() {
+export function Header() {
   const navItems = [
     { label: "Início", href: "/" },
     { label: "A Clínica", href: "/clinica" },
@@ -15,7 +16,7 @@ export async function Header() {
     { label: "Tratamentos", href: "/tratamentos" },
   ];
 
-  const currentPath = await getCurrentPath();
+  const currentPath = usePathname();
 
   return (
     <header
