@@ -7,51 +7,52 @@ const tratamentos = [
     id: "aparelho-ortodontico",
     title: "Aparelho Ortodôntico",
     description:
-      "Instalação e manutenção de aparelhos para correção dos dentes e mordida.",
+      "Instalação e manutenção de aparelhos para correção do alinhamento dos dentes e mordida.",
     image: "/assets/images/tratamentos/aparelho-ortodontico.png",
   },
   {
-    id: "restauracao",
-    title: "Restauração",
+    id: "dentistica",
+    title: "Dentística",
     description:
-      "Tratamento para recuperar dentes danificados por cáries ou fraturas.",
+      "Tratamentos funcionais e estéticos para seus dentes, como facetas, clareamentos e restauração de dentes cariados ou fraturados.",
     image: "/assets/images/tratamentos/aparelho-ortodontico.png",
   },
   {
-    id: "canal",
-    title: "Canal",
+    id: "endodontia",
+    title: "Endodontia",
     description:
-      "Endodontia para remoção da polpa dentária inflamada ou infectada.",
-    image: "/assets/images/tratamentos/aparelho-ortodontico.png",
-  },
-  {
-    id: "facetas",
-    title: "Facetas",
-    description:
-      "Revestimento estético para melhorar forma, cor e alinhamento dos dentes.",
+      'Também conhecido como "canal", é o tratamento de infecções ou inflamações profundas nos dentes, atingindo a polpa ou tecidos periapicais.',
     image: "/assets/images/tratamentos/aparelho-ortodontico.png",
   },
   {
     id: "protese",
-    title: "Próteses",
+    title: "Próteses e Implantes",
     description:
-      "Próteses fixas e removíveis para reabilitação da mastigação e estética.",
+      "Próteses fixas e removíveis e implantes para reabilitação da mastigação e reconstrução estética do seu sorriso.",
     image: "/assets/images/tratamentos/aparelho-ortodontico.png",
   },
   {
-    id: "extracao",
-    title: "Extração Dentária",
+    id: "cirurgias",
+    title: "Cirurgias",
     description:
-      "Extração de dentes comprometidos de forma segura e confortável.",
+      "Procedimentos cirúrgicos com segurança e conforto para você: extrações dentárias, cirurgias periodontais (gengivas), frenectomia (remoção de freio lingual) entre outros.",
+    image: "/assets/images/tratamentos/aparelho-ortodontico.png",
+  },
+  {
+    id: "limpeza",
+    title: "Limpezas",
+    description:
+      "Vários tipos de limpeza para manter a beleza do seu sorriso.\n" +
+      "Profilaxia (placas bacterianas e manchas superficiais), tartarectomia (remoção de tártaro) e raspagem em campo aberto (limpeza cirúrgica, para casos de doença periodontal avançada)",
     image: "/assets/images/tratamentos/aparelho-ortodontico.png",
   },
 ];
 
 export default function Tratamentos() {
   return (
-    <main className="max-w-6xl mx-auto px-6 py-12">
+    <main className="max-w-6xl mx-auto px-6 py-12 flex flex-col items-center text-center">
       <h1 className="text-3xl font-bold text-teal-700 mb-4">Tratamentos</h1>
-      <p className="text-gray-700 mb-10 max-w-3xl">
+      <p className="text-gray-700 mb-10 max-w-3xl text-center">
         Conheça os principais tratamentos que oferecemos em nossa clínica.
         Cuidamos do seu sorriso com tecnologia, qualidade e acolhimento.
       </p>
@@ -62,33 +63,33 @@ export default function Tratamentos() {
             key={t.id}
             id={t.id}
             className={cn(
-              "flex flex-col md:flex-row gap-6 md:gap-10 bg-gray-50 py-4 px-2 shadow-md self-start max-w-2xl scroll-mt-20",
-              index % 2 === 1 && "md:flex-row-reverse self-end"
+              "w-full flex flex-row gap-10 border-1 border-gray-100 rounded-xl shadow-md self-start scroll-mt-20 text-left min-h-56",
+              index % 2 === 1 && "flex-row-reverse self-end text-right"
             )}
           >
-            <div className="relative w-full aspect-[3/2] md:w-48 md:h-32">
+            <div className="relative aspect-[3/2] min-h-56 self-stretch w-auto">
               <Image
                 src={t.image}
                 alt={t.title}
                 fill
-                className="rounded-xl object-cover w-full h-auto shadow-sm"
+                className={cn(
+                  "object-cover w-full h-auto shadow-sm",
+                  index % 2 === 1 ? "rounded-r-xl" : "rounded-l-xl"
+                )}
               />
             </div>
-            <div
-              className={cn(
-                "w-full md:w-1/2",
-                index % 2 === 1 && "md:text-right"
-              )}
-            >
+            <div className="w-full py-8 px-4">
               <h3 className="text-2xl font-semibold text-teal-700 mb-2">
                 {t.title}
               </h3>
-              <p className="text-gray-600 text-base">{t.description}</p>
+              <p className="text-gray-600 text-base whitespace-pre-wrap">
+                {t.description}
+              </p>
               <a
                 href={`https://wa.me/5514997027365?text=${encodeURIComponent(
                   `Olá! Vim pelo site, tenho interesse em ${t.title}`
                 )}`}
-                className="text-primary underline inline-flex gap-1 items-center"
+                className="text-primary underline inline-flex gap-1 items-center mt-4"
               >
                 Agende pelo WhatsApp <ExternalLink size={18} />
               </a>

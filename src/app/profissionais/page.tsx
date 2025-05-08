@@ -23,7 +23,7 @@ const professionals: Professional[] = [
   },
   {
     name: "Dra. Naiene Sanches",
-    specialization: "Clínico geral e atendimento infantil",
+    specialization: "Clínico geral, atendimento infantil e dentística",
     cro: "CRO/SP 147910",
     picture: "/assets/images/profissionais/Naiene.jpg",
   },

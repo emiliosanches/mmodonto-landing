@@ -19,7 +19,7 @@ const serviceAreas = [
     ),
   },
   {
-    link: "/tratamentos#restauracao",
+    link: "/tratamentos#dentistica",
     title: "DENTÍSTICA",
     desc: "Clareamento e restaurações estéticas.\nTratamento de cáries, fraturas, descolorações, e muito mais. Deixe seu sorriso ainda mais bonito!",
     icon: (
@@ -32,7 +32,7 @@ const serviceAreas = [
     ),
   },
   {
-    link: "/tratamentos#canal",
+    link: "/tratamentos#endodontia",
     title: "ENDODONTIA",
     desc: "Tratamento de lesões na polpa e canais.\nPrecisando de um tratamento mais profundo? Nossos profissionais estão capacitados para te atender!",
     icon: (
