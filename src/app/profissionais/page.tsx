@@ -43,7 +43,7 @@ const professionals: Professional[] = [
 
 export default function ProfissionaisPage() {
   return (
-    <main className="max-w-[90rem] mx-auto px-20 py-12">
+    <div className="max-w-[90rem] mx-auto px-20 py-12">
       <h1 className="text-3xl font-bold text-center text-teal-700 mb-4">
         Nossos Profissionais
       </h1>
@@ -83,6 +83,6 @@ export default function ProfissionaisPage() {
           ))}
         </div>
       </div>
-    </main>
+    </div>
   );
 }

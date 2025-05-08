@@ -31,9 +31,9 @@ export default function RootLayout({
           <aside role="complementary">
             <AppSidebar />
           </aside>
-          <div className="w-full pt-20">
+          <div className="w-full pt-20 flex flex-col">
             <Header />
-            {children}
+            <main className="flex-1">{children}</main>
             <Footer />
           </div>
         </SidebarProvider>

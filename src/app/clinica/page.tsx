@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Clinica() {
   return (
-    <main className="max-w-6xl mx-auto px-6 py-12 flex flex-col gap-16">
+    <div className="max-w-6xl mx-auto px-6 py-12 flex flex-col gap-16">
       <section className="grid md:grid-cols-2 gap-10 items-center">
         <div className="space-y-6">
           <h1 className="text-4xl font-bold text-teal-700">
@@ -73,6 +73,6 @@ export default function Clinica() {
           ></iframe>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

@@ -7,7 +7,7 @@ const tratamentos = [
     id: "aparelho-ortodontico",
     title: "Aparelho Ortodôntico",
     description:
-      "Instalação e manutenção de aparelhos para correção do alinhamento dos dentes e mordida.",
+      "Instalação e manutenção de aparelhos ortodônticos para adultos e crianças, proporcionando correção do alinhamento dos dentes e mordida.",
     image: "/assets/images/tratamentos/aparelho-ortodontico.png",
   },
   {
@@ -42,7 +42,7 @@ const tratamentos = [
     id: "limpeza",
     title: "Limpezas",
     description:
-      "Vários tipos de limpeza para manter a beleza do seu sorriso.\n" +
+      "Diferentes tipos de limpeza para manter a saúde do seu sorriso.\n" +
       "Profilaxia (placas bacterianas e manchas superficiais), tartarectomia (remoção de tártaro) e raspagem em campo aberto (limpeza cirúrgica, para casos de doença periodontal avançada)",
     image: "/assets/images/tratamentos/aparelho-ortodontico.png",
   },
@@ -50,7 +50,7 @@ const tratamentos = [
 
 export default function Tratamentos() {
   return (
-    <main className="max-w-6xl mx-auto px-6 py-12 flex flex-col items-center text-center">
+    <div className="max-w-6xl mx-auto px-6 py-12 flex flex-col items-center text-center">
       <h1 className="text-3xl font-bold text-teal-700 mb-4">Tratamentos</h1>
       <p className="text-gray-700 mb-10 max-w-3xl text-center">
         Conheça os principais tratamentos que oferecemos em nossa clínica.
@@ -63,7 +63,7 @@ export default function Tratamentos() {
             key={t.id}
             id={t.id}
             className={cn(
-              "w-full flex flex-row gap-10 border-1 border-gray-100 rounded-xl shadow-md self-start scroll-mt-20 text-left min-h-56",
+              "w-full flex flex-row gap-10 border-1 border-gray-100 rounded-xl shadow-md self-start scroll-mt-24 text-left min-h-56",
               index % 2 === 1 && "flex-row-reverse self-end text-right"
             )}
           >
@@ -87,7 +87,7 @@ export default function Tratamentos() {
               </p>
               <a
                 href={`https://wa.me/5514997027365?text=${encodeURIComponent(
-                  `Olá! Vim pelo site, tenho interesse em ${t.title}`
+                  `Olá! Vim pelo site da M&M Odonto e tenho interesse em ${t.title}`
                 )}`}
                 className="text-primary underline inline-flex gap-1 items-center mt-4"
               >
@@ -97,6 +97,6 @@ export default function Tratamentos() {
           </div>
         ))}
       </div>
-    </main>
+    </div>
   );
 }
