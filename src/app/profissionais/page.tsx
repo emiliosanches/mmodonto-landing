@@ -23,19 +23,19 @@ const professionals: Professional[] = [
   },
   {
     name: "Dra. Naiene Sanches",
-    specialization: "Clínico geral e pediatria",
+    specialization: "Clínico geral e atendimento infantil",
     cro: "CRO/SP 147910",
     picture: "/assets/images/profissionais/Naiene.jpg",
   },
   {
     name: "Dra. Letícia Passoni",
-    specialization: "Clínico geral, implantes, cirurgias e próteses",
+    specialization: "Cirurgias, implantes, próteses e clínico geral",
     cro: "CRO/SP 148038",
     picture: "/assets/images/profissionais/Leticia.jpg",
   },
   {
     name: "Dr. Fernando Nishida",
-    specialization: "Clínico geral, próteses e cirurgias",
+    specialization: "Próteses, cirurgias e clínico geral",
     cro: "CRO/SP 122501",
     picture: "/assets/images/profissionais/Fernando.jpg",
   },
