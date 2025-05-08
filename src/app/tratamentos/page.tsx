@@ -15,28 +15,28 @@ const tratamentos = [
     title: "Dentística",
     description:
       "Tratamentos funcionais e estéticos para seus dentes, como facetas, clareamentos e restauração de dentes cariados ou fraturados.",
-    image: "/assets/images/tratamentos/aparelho-ortodontico.png",
+    image: "/assets/images/tratamentos/dentistica.png",
   },
   {
     id: "endodontia",
     title: "Endodontia",
     description:
       'Também conhecido como "canal", é o tratamento de infecções ou inflamações profundas nos dentes, atingindo a polpa ou tecidos periapicais.',
-    image: "/assets/images/tratamentos/aparelho-ortodontico.png",
+    image: "/assets/images/tratamentos/endodontia.png",
   },
   {
     id: "protese",
     title: "Próteses e Implantes",
     description:
       "Próteses fixas e removíveis e implantes para reabilitação da mastigação e reconstrução estética do seu sorriso.",
-    image: "/assets/images/tratamentos/aparelho-ortodontico.png",
+    image: "/assets/images/tratamentos/implante-protese.png",
   },
   {
     id: "cirurgias",
     title: "Cirurgias",
     description:
       "Procedimentos cirúrgicos com segurança e conforto para você: extrações dentárias, cirurgias periodontais (gengivas), frenectomia (remoção de freio lingual) entre outros.",
-    image: "/assets/images/tratamentos/aparelho-ortodontico.png",
+    image: "/assets/images/tratamentos/cirurgias.png",
   },
   {
     id: "limpeza",
@@ -44,7 +44,7 @@ const tratamentos = [
     description:
       "Diferentes tipos de limpeza para manter a saúde do seu sorriso.\n" +
       "Profilaxia (placas bacterianas e manchas superficiais), tartarectomia (remoção de tártaro) e raspagem em campo aberto (limpeza cirúrgica, para casos de doença periodontal avançada)",
-    image: "/assets/images/tratamentos/aparelho-ortodontico.png",
+    image: "/assets/images/tratamentos/limpeza.png",
   },
 ];
 
