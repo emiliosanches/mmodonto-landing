@@ -20,7 +20,7 @@ export default function Clinica() {
             className="inline-flex gap-2 items-center bg-teal-700 text-white font-medium px-6 py-3 rounded-xl hover:bg-teal-800 transition"
           >
             Conheça nossos profissionais
-            <ExternalLink size={20}/>
+            <ExternalLink size={20} />
           </Link>
         </div>
         <div className="flex items-center justify-center max-w-3xl w-10/12 h-64 overflow-hidden rounded-xl shadow-lg place-self-center">
@@ -36,7 +36,7 @@ export default function Clinica() {
       <section className="flex flex-col-reverse md:grid md:grid-cols-2 gap-10 items-center">
         <div className="flex items-center justify-center w-72 h-72 overflow-hidden rounded-full shadow-lg place-self-center">
           <Image
-            src="/assets/images/profissionais/naiene.jpg"
+            src="/assets/images/profissionais/Naiene.jpg"
             width={300}
             height={300}
             alt="Doutora Naiene - Nova direção da M&M Odonto em Tupã/SP"
