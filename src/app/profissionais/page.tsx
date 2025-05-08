@@ -35,7 +35,7 @@ const professionals: Professional[] = [
   },
   {
     name: "Dr. Fernando Nishida",
-    specialization: "Clínico geral e cirurgias",
+    specialization: "Clínico geral, próteses e cirurgias",
     cro: "CRO/SP 122501",
     picture: "/assets/images/profissionais/Fernando.jpg",
   },
