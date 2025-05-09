@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { ExternalLink } from "lucide-react";
+import { Metadata } from "next";
 import Image from "next/image";
 
 const tratamentos = [
@@ -47,6 +48,21 @@ const tratamentos = [
     image: "/assets/images/tratamentos/limpeza.png",
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Tratamentos",
+  description:
+    "Conheça todos os tratamentos odontológicos oferecidos pela M&M Odonto em Tupã/SP. Aparelhos, clareamento, canal, implantes, cirurgias e muito mais, com qualidade e cuidado.",
+  openGraph: {
+    title: "M&M Odonto | Tratamentos",
+    description:
+      "Clínica odontológica no centro de Tupã. Profissionais capacitados e atendimento humanizado. Venha nos conhecer!",
+    url: "https://mmodonto.com.br/",
+    siteName: "M&M Odonto",
+    locale: "pt_BR",
+    type: "website",
+  },
+};
 
 export default function Tratamentos() {
   return (

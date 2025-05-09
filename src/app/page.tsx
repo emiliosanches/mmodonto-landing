@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ChevronRight } from "lucide-react";
+import { Metadata } from "next";
 
 const serviceAreas = [
   {
@@ -58,6 +59,12 @@ const serviceAreas = [
     ),
   },
 ];
+
+export const metadata: Metadata = {
+  title: "M&M Odonto | Clínica Odontológica em Tupã - Sorria com Confiança",
+  description:
+    "A M&M Odonto é uma clínica odontológica no centro de Tupã/SP, especializada em ortodontia, próteses, dentística e mais. Agende sua avaliação e sorria com confiança!",
+};
 
 export default function HomePage() {
   return (
@@ -117,7 +124,6 @@ export default function HomePage() {
         <h2 className="text-2xl font-semibold mb-10">
           Nossas áreas de atendimento
         </h2>
-        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 max-w-6xl mx-auto"> */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto justify-center">
           {serviceAreas.map((item) => (
             <Link href={item.link} key={item.title}>

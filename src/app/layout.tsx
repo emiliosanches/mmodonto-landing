@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/header";
@@ -7,6 +6,7 @@ import { SidebarProvider } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/app-sidebar";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Metadata } from "next";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -14,9 +14,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "M&M Odonto | Clínica Odontológica em Tupã - Sorria com Confiança",
+  title: {
+    default: "M&M Odonto | Clínica Odontológica em Tupã",
+    template: "M&M Odonto | %s",
+  },
   description:
-    "Clínica odontológica em Tupã com profissionais altamente qualificados. Realizamos instalação e manutenção de aparelho ortodôntico, próteses, facetas, restaurações, atendimento infantil, e muito mais! Venha nos conhecer!",
+    "Clínica odontológica no centro de Tupã/SP com atendimento em ortodontia, endodontia, prótese e mais. Agende sua consulta!",
 };
 
 export default function RootLayout({

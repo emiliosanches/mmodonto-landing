@@ -1,6 +1,13 @@
 import { ExternalLink } from "lucide-react";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Nossa Clínica",
+  description:
+    "Conheça todos os tratamentos odontológicos oferecidos pela M&M Odonto em Tupã/SP. Aparelhos, clareamento, canal, implantes, cirurgias e muito mais, com qualidade e cuidado.",
+};
 
 export default function Clinica() {
   return (

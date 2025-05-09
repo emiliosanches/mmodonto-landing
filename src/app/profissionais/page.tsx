@@ -1,5 +1,6 @@
 import Image from "next/image";
 import gridCss from "./professionals-grid.css";
+import { Metadata } from "next";
 
 type Professional = {
   name: string;
@@ -40,6 +41,12 @@ const professionals: Professional[] = [
     picture: "/assets/images/profissionais/Fernando.jpg",
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Profissionais",
+  description:
+    "Conheça os dentistas da MM Odonto em Tupã/SP. Profissionais qualificados e especializados, oferecendo atendimento humanizado e tratamentos odontológicos de excelência.",
+};
 
 export default function ProfissionaisPage() {
   return (
