@@ -121,7 +121,7 @@ export default function HomePage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto justify-center">
           {serviceAreas.map((item) => (
             <Link href={item.link} key={item.title}>
-              <Card className="rounded-2xl shadow-sm group hover:bg-primary hover:text-white transition-all">
+              <Card className="rounded-2xl shadow-sm group hover:bg-primary hover:text-white transition-all h-full">
                 <CardContent className="p-6 cursor-pointer">
                   <div className="flex justify-between items-center mb-2">
                     <h3 className="text-lg font-semibold flex items-center mb-0">
