@@ -79,18 +79,18 @@ export default function Tratamentos() {
             key={t.id}
             id={t.id}
             className={cn(
-              "w-full flex flex-row gap-10 border-1 border-gray-100 rounded-xl shadow-md self-start scroll-mt-24 text-left min-h-56",
-              index % 2 === 1 && "flex-row-reverse self-end text-right"
+              "w-full flex flex-col sm:flex-row gap-10 border-1 border-gray-100 rounded-xl shadow-md self-start scroll-mt-24 text-left min-h-20 sm:min-h-56",
+              index % 2 === 1 && "sm:flex-row-reverse self-end text-right"
             )}
           >
-            <div className="relative aspect-[3/2] min-h-56 self-stretch w-auto">
+            <div className="relative aspect-[3/2] min-h-20 sm:max-w-1/2 sm:min-h-56 self-stretch">
               <Image
                 src={t.image}
                 alt={t.title}
                 fill
                 className={cn(
-                  "object-cover w-full h-auto shadow-sm",
-                  index % 2 === 1 ? "rounded-r-xl" : "rounded-l-xl"
+                  "object-cover w-full h-auto shadow-sm rounded-t-xl sm:rounded-t-none",
+                  index % 2 === 1 ? "sm:rounded-r-xl" : "sm:rounded-l-xl",
                 )}
               />
             </div>
