@@ -66,17 +66,21 @@ export const metadata: Metadata = {
     "A M&M Odonto é uma clínica odontológica no centro de Tupã/SP, especializada em ortodontia, próteses, dentística e mais. Agende sua avaliação e sorria com confiança!",
 };
 
+export const dynamic = "force-static";
+
 export default function HomePage() {
   return (
     <div>
       <section className="bg-primary text-white px-6 flex flex-col-reverse justify-center items-center gap-2 sm:flex-row">
-        <Image
-          src="/assets/images/sorriso.png"
-          alt="Imagem de mulher sorrindo"
-          height={450}
-          width={300}
-          className="h-[300px] w-[200px] md:h-[450px] md:w-[300px]"
-        />
+        <div className="relative h-[300px] w-[200px] md:h-[450px] md:w-[300px]">
+          <Image
+            src="/assets/images/sorriso.png"
+            alt="Imagem de mulher sorrindo"
+            fill
+            className="object-cover"
+            sizes="(min-width: 768px) 300px, 200px"
+          />
+        </div>
         <div className="max-w-4xl pt-12 text-center sm:pb-12 flex flex-col items-center gap-4">
           <Image
             src="/assets/logo/mmodonto-circular-branco.png"
