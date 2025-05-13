@@ -61,9 +61,9 @@ const serviceAreas = [
 ];
 
 export const metadata: Metadata = {
-  title: "M&M Odonto | Clínica Odontológica em Tupã - Sorria com Confiança",
+  title: "Dentista em Tupã – M&M Odonto | Cuide do seu sorriso",
   description:
-    "A M&M Odonto é uma clínica odontológica no centro de Tupã/SP, especializada em ortodontia, próteses, dentística e mais. Agende sua avaliação e sorria com confiança!",
+    "Precisando de um dentista? A M&M Odonto é uma clínica odontológica no centro de Tupã, especializada em ortodontia, próteses, dentística e mais. Agende sua avaliação e sorria com confiança!",
 };
 
 export const dynamic = "force-static";
@@ -90,7 +90,7 @@ export default function HomePage() {
           />
           <h1 className="text-4xl font-bold ">SORRIA COM CONFIANÇA</h1>
           <p className="text-lg  max-w-[400px]">
-            Venha cuidar do seu sorriso com a gente,{" "}
+            Venha cuidar do seu sorriso com nossos dentistas,{" "}
             <span className="text-green-300 font-semibold">
               agende sua avaliação agora mesmo!
             </span>

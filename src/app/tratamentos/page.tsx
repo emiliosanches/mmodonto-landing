@@ -50,14 +50,14 @@ const tratamentos = [
 ];
 
 export const metadata: Metadata = {
-  title: "Tratamentos",
+  title: "Tratamentos odontológicos com dentistas em Tupã",
   description:
-    "Conheça todos os tratamentos odontológicos oferecidos pela M&M Odonto em Tupã/SP. Aparelhos, clareamento, canal, implantes, cirurgias e muito mais, com qualidade e cuidado.",
+    "Nossos dentistas são capacitados para oferecer diversos tratamentos para você e sua família. Conheça todas as nossas opções e agende sua consulta!",
   openGraph: {
     title: "M&M Odonto | Tratamentos",
     description:
-      "Clínica odontológica no centro de Tupã. Profissionais capacitados e atendimento humanizado. Venha nos conhecer!",
-    url: "https://mmodonto.com.br/",
+      "Conheça todos os tratamentos odontológicos oferecidos pelos dentistas da M&M Odonto em Tupã - SP. Aparelhos, clareamento, canal, implantes, cirurgias e muito mais, com qualidade e cuidado.",
+    url: "https://mmodonto.com.br/tratamentos",
     siteName: "M&M Odonto",
     locale: "pt_BR",
     type: "website",

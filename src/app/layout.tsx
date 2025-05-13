@@ -16,7 +16,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: {
     default: "M&M Odonto | Clínica Odontológica em Tupã",
-    template: "M&M Odonto | %s",
+    template: "%s | M&M Odonto",
   },
   description:
     "Clínica odontológica no centro de Tupã/SP com atendimento em ortodontia, endodontia, prótese e mais. Agende sua consulta!",

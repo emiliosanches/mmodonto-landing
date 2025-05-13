@@ -19,7 +19,7 @@ export function Footer() {
             className="underline"
           >
             <MapPin className="inline" size={16} /> Rua Caetés, 993 - Centro -
-            Tupã/SP
+            Tupã - SP
           </a>
         </div>
         <nav role="navigation" aria-labelledby="footer-links-heading">
@@ -34,7 +34,7 @@ export function Footer() {
               <Link href="/clinica">A Clínica</Link>
             </li>
             <li>
-              <Link href="/profissionais">Profissionais</Link>
+              <Link href="/profissionais">Profissionais (Dentistas)</Link>
             </li>
             <li>
               <Link href="/tratamentos">Tratamentos</Link>

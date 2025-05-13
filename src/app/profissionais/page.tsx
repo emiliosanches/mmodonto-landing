@@ -43,9 +43,9 @@ const professionals: Professional[] = [
 ];
 
 export const metadata: Metadata = {
-  title: "Profissionais",
+  title: "Conheça nossos dentistas em Tupã",
   description:
-    "Conheça os dentistas da MM Odonto em Tupã/SP. Profissionais qualificados e especializados, oferecendo atendimento humanizado e tratamentos odontológicos de excelência.",
+    "Conheça os dentistas da MM Odonto em Tupã - SP. Profissionais qualificados e especializados, oferecendo atendimento humanizado e tratamentos odontológicos de excelência.",
 };
 
 export default function ProfissionaisPage() {
