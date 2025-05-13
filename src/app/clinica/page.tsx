@@ -65,9 +65,7 @@ export default function Clinica() {
         <h2 className="text-2xl font-semibold text-teal-700 mb-4">
           Onde estamos
         </h2>
-        <p className="text-gray-700 mb-4">
-          Rua Duque de Caxias, 289 - Centro, Tupã - SP
-        </p>
+        <p className="text-gray-700 mb-4">Rua Caetés, 993 - Centro - Tupã/SP</p>
         <div className="w-full h-96 rounded-xl overflow-hidden shadow-lg">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3701.060557691695!2d-50.51731358844003!3d-21.932223279869365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9495b7ff958b2053%3A0x2ec0e766f5318cc5!2sM%26M%20ODONTO%20-%20ORTODONTIA%20E%20CL%C3%8DNICO%20GERAL!5e0!3m2!1spt-BR!2sbr!4v1746588707662!5m2!1spt-BR!2sbr"
