@@ -48,7 +48,7 @@ export function Footer() {
             <br />
             (14) 99877-2200
             <br />
-            mmodontotupa.sp@gmail.com
+            sp.tupa@mmodonto.com.br
           </p>
         </div>
         <div>
