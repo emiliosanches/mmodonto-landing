@@ -77,6 +77,7 @@ export function Footer() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn de Emilio Sanches (abre em nova aba)"
+          className="underline"
         >
           Emilio Sanches
         </a>
