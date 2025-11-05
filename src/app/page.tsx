@@ -121,6 +121,8 @@ export default function HomePage() {
               (14) 99877-2200
             </a>
           </div>
+
+          <span className="text-gray-300 text-sm">CROSP-CL 14322</span>
         </div>
       </section>
 

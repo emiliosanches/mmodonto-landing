@@ -14,9 +14,12 @@ export default function Clinica() {
     <div className="max-w-6xl mx-auto px-6 py-12 flex flex-col gap-16">
       <section className="grid md:grid-cols-2 gap-10 items-center">
         <div className="space-y-6">
-          <h1 className="text-4xl font-bold text-teal-700">
-            Conheça a M&M Odonto
+          <h1 className="text-4xl font-bold mb-0">
+            Conheça a <span className="text-teal-700">M&M Odonto</span>
           </h1>
+
+          <p className="text-gray-400 text-sm">CROSP-CL 14322</p>
+
           <p className="text-gray-700 text-lg">
             Localizada no coração de Tupã, nossa clínica foi projetada para
             oferecer conforto, tecnologia e um ambiente acolhedor. Nosso

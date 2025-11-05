@@ -12,13 +12,13 @@ type Professional = {
 const professionals: Professional[] = [
   {
     name: "Dr. Lucas Monzane",
-    specialization: "Ortodontia e Responsável Técnico",
+    specialization: "Clínico Geral - Ortodontia",
     cro: "CRO/SP 108445",
     picture: "/assets/images/profissionais/Lucas.jpg",
   },
   {
     name: "Dr. Renan Lehm",
-    specialization: "Endodontia",
+    specialization: "Clínico Geral - Endodontia",
     cro: "CRO/SP 137074",
     picture: "/assets/images/profissionais/Renan.jpg",
   },
