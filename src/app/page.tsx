@@ -122,7 +122,12 @@ export default function HomePage() {
             </a>
           </div>
 
-          <span className="text-gray-300 text-sm">CROSP-CL 14322</span>
+          <div>
+            <p className="text-gray-300 text-sm mb-2">
+              RT Naiene de Lima Sanches CRO-SP 147910 
+            </p>
+            <p className="text-gray-300 text-sm">CROSP-CL 14322</p>
+          </div>
         </div>
       </section>
 
