@@ -46,7 +46,7 @@ export function Header() {
             className={cn(
               "flex items-center h-full relative text-foreground font-medium transition-colors hover:text-primary after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full after:origin-right hover:after:origin-left",
               matchPaths(currentPath ?? "", item.href) &&
-                "text-primary after:w-full after:origin-left"
+                "text-primary after:w-full after:origin-left",
             )}
           >
             <p>{item.label}</p>
@@ -54,9 +54,7 @@ export function Header() {
         ))}
 
         <Link
-          href="https://wa.me/5514997027365"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/contato-whatsapp"
           className="flex gap-2 bg-primary hover:bg-teal-700 text-white px-6 py-2 rounded-xl text-base cursor-pointer"
           aria-label="Entrar em contato via WhatsApp"
         >

@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 import { ExternalLink } from "lucide-react";
 import { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 
 const tratamentos = [
   {
@@ -80,7 +81,7 @@ export default function Tratamentos() {
             id={t.id}
             className={cn(
               "w-full flex flex-col sm:flex-row gap-10 border-1 border-gray-100 rounded-xl shadow-md self-start scroll-mt-24 text-left min-h-20 sm:min-h-56",
-              index % 2 === 1 && "sm:flex-row-reverse self-end text-right"
+              index % 2 === 1 && "sm:flex-row-reverse self-end text-right",
             )}
           >
             <div className="relative aspect-[3/2] min-h-20 sm:max-w-1/2 sm:min-h-56 self-stretch">
@@ -101,14 +102,12 @@ export default function Tratamentos() {
               <p className="text-gray-600 text-base whitespace-pre-wrap">
                 {t.description}
               </p>
-              <a
-                href={`https://wa.me/5514997027365?text=${encodeURIComponent(
-                  `Olá! Vim pelo site da M&M Odonto e tenho interesse em ${t.title}`
-                )}`}
+              <Link
+                href="/contato-whatsapp"
                 className="text-primary underline inline-flex gap-1 items-center mt-4"
               >
                 Agende pelo WhatsApp <ExternalLink size={18} />
-              </a>
+              </Link>
             </div>
           </div>
         ))}

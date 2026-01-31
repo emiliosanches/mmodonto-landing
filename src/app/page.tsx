@@ -71,62 +71,58 @@ export const dynamic = "force-static";
 export default function HomePage() {
   return (
     <div>
-      <section className="bg-primary text-white px-6 flex flex-col-reverse justify-center items-center gap-2 sm:flex-row">
-        <div className="relative h-[300px] w-[200px] md:h-[450px] md:w-[300px]">
-          <Image
-            src="/assets/images/sorriso.png"
-            alt="Imagem de mulher sorrindo"
-            fill
-            className="object-cover"
-            sizes="(min-width: 768px) 300px, 200px"
-          />
-        </div>
-        <div className="max-w-4xl pt-12 text-center sm:pb-12 flex flex-col items-center gap-4">
-          <Image
-            src="/assets/logo/mmodonto-circular-branco.png"
-            alt="Logo da M&M Odonto"
-            width={128}
-            height={128}
-          />
-          <h1 className="text-4xl font-bold ">SORRIA COM CONFIANÇA</h1>
-          <p className="text-lg  max-w-[400px]">
-            Venha cuidar do seu sorriso com nossos dentistas,{" "}
-            <span className="text-green-300 font-semibold">
-              agende sua avaliação agora mesmo!
-            </span>
-          </p>
-          <div className="flex flex-col justify-center items-center gap-4 sm:flex-row">
-            <a
-              href="https://wa.me/5514997027365"
-              className="underline flex gap-1"
-            >
-              <Image
-                src="/assets/icons/whatsapp-white.png"
-                alt="Ícone do WhatsApp"
-                width={24}
-                height={24}
-              />{" "}
-              (14) 99702-7365
-            </a>
-            <a
-              href="https://wa.me/5514998772200"
-              className="underline flex gap-1"
-            >
-              <Image
-                src="/assets/icons/whatsapp-white.png"
-                alt="Ícone do WhatsApp"
-                width={24}
-                height={24}
-              />{" "}
-              (14) 99877-2200
-            </a>
+      <section className="bg-primary text-white flex justify-center">
+        <div className="relative w-full max-w-[780px] h-[450px]">
+          <div className="absolute left-0 top-1/2 -translate-y-1/2 h-[450px] w-[300px] hidden sm:block">
+            <Image
+              src="/assets/images/sorriso.png"
+              alt="Imagem de mulher sorrindo"
+              fill
+              className="object-contain"
+              sizes="(min-width: 768px) 300px, 200px"
+            />
           </div>
-
-          <div>
-            <p className="text-gray-300 text-sm mb-2">
-              RT Naiene de Lima Sanches CRO-SP 147910 
+          <div className="absolute right-1/2 top-1/2 -translate-y-1/2 sm:right-0 translate-x-1/2 sm:translate-x-0 w-max max-w-4xl px-4 pt-2 text-center flex flex-col justify-center items-center gap-4 bg-linear-to-r from-primary/0 via-primary/95 to-primary">
+            <Image
+              src="/assets/logo/mmodonto-circular-branco.png"
+              alt="Logo da M&M Odonto"
+              width={128}
+              height={128}
+            />
+            <h1 className="text-4xl font-bold ">SORRIA COM CONFIANÇA</h1>
+            <p className="text-lg  max-w-[400px]">
+              Venha cuidar do seu sorriso com nossos dentistas,{" "}
+              <span className="text-green-300 font-semibold">
+                agende sua avaliação agora mesmo!
+              </span>
             </p>
-            <p className="text-gray-300 text-sm">CROSP-CL 14322</p>
+            <div className="flex flex-row justify-center items-center gap-4 ">
+              <Link href="/contato-whatsapp" className="underline flex gap-1">
+                <Image
+                  src="/assets/icons/whatsapp-white.png"
+                  alt="Ícone do WhatsApp"
+                  width={24}
+                  height={24}
+                />{" "}
+                (14) 99702-7365
+              </Link>
+              <Link href="/contato-whatsapp" className="underline flex gap-1">
+                <Image
+                  src="/assets/icons/whatsapp-white.png"
+                  alt="Ícone do WhatsApp"
+                  width={24}
+                  height={24}
+                />{" "}
+                (14) 99877-2200
+              </Link>
+            </div>
+
+            <div>
+              <p className="text-gray-300 text-sm mb-2">
+                RT Naiene de Lima Sanches CRO-SP 147910
+              </p>
+              <p className="text-gray-300 text-sm">CROSP-CL 14322</p>
+            </div>
           </div>
         </div>
       </section>
@@ -168,9 +164,7 @@ export default function HomePage() {
 
         <div className="text-center mt-10">
           <Link
-            href="https://wa.me/5514997027365"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/contato-whatsapp"
             className="flex gap-2 bg-primary hover:bg-teal-700 text-white px-6 py-2 rounded-xl text-base cursor-pointer"
           >
             <Image
