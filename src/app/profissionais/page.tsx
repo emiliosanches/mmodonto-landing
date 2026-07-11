@@ -34,12 +34,6 @@ const professionals: Professional[] = [
     cro: "CRO/SP 148038",
     picture: "/assets/images/profissionais/Leticia.jpg",
   },
-  {
-    name: "Dr. Fernando Nishida",
-    specialization: "Próteses, cirurgias e clínico geral",
-    cro: "CRO/SP 122501",
-    picture: "/assets/images/profissionais/Fernando.jpg",
-  },
 ];
 
 export const metadata: Metadata = {
